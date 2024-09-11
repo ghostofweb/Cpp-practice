@@ -15,8 +15,7 @@ using namespace std;
 //     return 0;
 
 //     for (char *cp = a; *cp != 0 ; cp++) // pointing towards the first element then looping till we get 0 by derefrencing it each time and then ++ for next index
-//     {
-//         cout<<*cp<<endl;
+//     {<<endl;
 //     }
     
 // }
