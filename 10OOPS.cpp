@@ -7,6 +7,7 @@ class User
 private:
     int secret = 22;
 public:
+    void defineLaterClass(); // defining the class to write the expression later
     string name = "default";
     void classMessage(){cout << "This is a class name : d"<<name<<  endl;}
 
@@ -19,9 +20,12 @@ public:
     int getSecret(){
         return secret;
     }
-
 };
 
+
+void User::defineLaterClass(){ //defineLaterClass
+    cout<<"defined the class later"<<endl;
+}
 
 
 int main()
