@@ -11,4 +11,5 @@ int fact(int a){
 int main(){
     int value = fact(5);
     printf("%d", value);
+    cout << "hrllo";
 }
