@@ -106,10 +106,27 @@ void max_num(){
     
 }
 
+void gcdlcm(int a, int b){
+    vector<int>vec;
+    int hcf = 1;
+    int lcm = 1;
+    for(int i = 1; i<= min(a,b);i ++){
+        if(a % i ==0 && b % i == 0){
+                hcf = i;
+        }
+    }
+    lcm = (a * b) / hcf;
+    vec.push_back(lcm);
+    vec.push_back(hcf);
+    cout<<"lcm is "<< lcm << " hcf is " << hcf;
+}
+
+
+
 int main(int argc, const char** argv) {
     int n;
     // cout<<"enter the number "<<endl;
     // cin>>n;
-    max_num();
+    gcdlcm(5,10);
 }
 
