@@ -81,14 +81,37 @@ void print7(int n) {
         }
         cout << endl;
     }
-    cout << endl;
+}
+
+void print8(int n){
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf(" ");
+        }
+        
+        for (int j = 0; j < 2 * n - ( 2 * i + 1); j++)
+        {
+            printf("*");
+        }
+        
+        for (int j = 0; j < i; j++)
+        {
+            printf(" ");
+        }
+      cout << endl;
+    }
+
 }
 
 int main() {
     int n;
     cout << "Enter the value of n: ";
     cin >> n;
-    
+    print7(n);
+    print8(n);
 
+    
     return 0;
 }
